@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="tstyle07.css">
+        <title>Селекторы</title>
+    </head> 
+    <body>
+<table id="selectors">
+				<tr>
+					<th>CSS&nbsp;селектор</th><th>Пример</th><th>Описание</th><th>CSS</th>
+				</tr>
+				<tr>
+					<td><a href="sel_class.php">.class</a></td>
+					<td><code>.myClass</code></td>
+					<td>Выбирает все элементы с классом myClass (<code>class="myClass"</code>).</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><a href="sel_id.php">#id</a></td>
+					<td><code>#main</code></td>
+					<td>Выбирает элемент с идентификатором main (<code>id="main"</code>).</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><a href="sel_all.php">*</a></td>
+					<td><code>*</code></td>
+					<td>Выбор всех элементов.</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><a href="sel_element.php">элемент</a></td>
+					<td><code>span</code></td>
+					<td>Выбор всех элементов <code>&lt;span&gt;</code>.</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><a href="sel_element_comma.php">элемент,элемент</a></td>
+					<td><code>div,span</code></td>
+					<td>Выбор всех элементов <code>&lt;div&gt;</code> и всех элементов <code>&lt;span&gt;</code>.</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attribute.php">[атрибут]</a></td>
+					<td><code>[title]</code></td>
+					<td>Выбирает все элементы с атрибутом <code>title</code>.</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attribute_value.php">[атрибут="значение"]</a></td>
+					<td><code>[title="cost"]</code></td>
+					<td>Выбирает все элементы с атрибутом <code>title</code>, значение которого в точности совпадает со значением указанным в селекторе (<code>title="cost"</code>).</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attribute_value_contains.php">[атрибут~="значение"]</a></td>
+					<td><code>[title~="один"]</code></td>
+					<td>Выбирает все элементы с атрибутом <code>title</code>, в значении которого (в любом месте) встречается подстрока (в виде отдельного слова) "один" (<code>title="один и два"</code>).</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attribute_value_lang.php">[атрибут|="значение"]</a></td>
+					<td><code>[lang|="ru"]</code></td>
+					<td>Выбор всех элементов с атрибутом <code>lang</code>, значение которого начинается с "ru".</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attr_begin.php">[атрибут^="значение"]</a></td>
+					<td><code>a[href^="https"]</code></td>
+					<td>Выбор каждого элемента <code>&lt;a&gt;</code> с атрибутом <code>href</code>, значение которого начинается с "https".</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attr_end.php">[атрибут$="значение"]</a></td>
+					<td><code>[src$=".png"]</code></td>
+					<td>Выбирает все элементы с атрибутом <code>src</code>, значение которого оканчивается на ".png" (<code>src="some_img.png"</code>).</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td><a href="sel_attr_contain.php">[атрибут*="значение"]</a></td>
+					<td><code>[title*="один"]</code></td>
+					<td>Выбирает все элементы с атрибутом <code>title</code>, в значении которого (в любом месте) встречается подстрока (в виде отдельного слова или его части) "один" (<code>title="один и два"</code>).</td>
+					<td>3</td>
+				</tr>
+				<tr>
+				<caption><b>
+Псевдокласс — это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они являются
+первым элементом своего типа, или на них наведён указатель мыши. Они обычно действуют так, как если бы вы применили
+класс к какой-то части вашего документа, что часто помогает сократить избыточные классы в разметке и даёт более
+гибкий, удобный в поддержке код.<br>
+<br>Псевдоэлементы ведут себя сходным образом, однако они действуют так, как если бы вы добавили в разметку целый новый
+HTML-элемент, а не применили класс к существующим элементам. Псевдоэлементы начинаются с двойного двоеточия ::.<br>
+<br>Селектор определяет, к какому элементу применять то или иное CSS-правило.</b>
+				</caption>
+			</table>
+    </body>
+</html>
